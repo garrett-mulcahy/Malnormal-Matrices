@@ -1,1 +1,26 @@
-RandOrthMat.m is not original code, it is by Ofek Shilon , 2006.
+We present the minimal code necessary to recreate the results given the Malnormal Matrices
+
+Data consists of the constants of malnormalities calculated for the real-valued Ginibre ensemble and matrices of form J = (1/2)(Re(U)+Im(V)), the latter of which we detailed connections to quantum expanders
+Hessians consists of the Hessians of the squared commutator norms as a function of the entries of a matrix. Once a matrix has been specified, its malnormality constant is just the square root of half the smallest eigenvalue. We employed this approach for matrices of dimension 3 to 18. 
+
+We now explain the files. In order to run this code in MATLAB, all of these files need to be uploaded into MATLAB together in a single folder since they call on each other 
+
+RandOrthMat.m is not original code, it is by Ofek Shilon, 2006. It returns Haar-random orthogonal matrices 
+
+generate_mal_data_opt.m and generate_gin_data_opt.m use optimization to generate the constant of malnormality for a large number of matrices of form J = (1/2)(Re(U)+Im(V)) and matrices from the real-valued Ginibre ensemble, respectively. We used this approach to generate constants of malnormality for square matrices of dimension 18 and greater. For any additional data generation, we recommend using these files as opposed to the Hessian approach outlined below. 
+
+generate_mal_data.m and generate_ginibre_data.m use an already calculated Hessian function to calculate the constant of malnormality for a large number of matrices of form J = (1/2)(Re(U)+Im(V)) and matrices from the real-valued Ginibre ensemble, respectively. We used this approach to generate constants of malnormality for square matrices of dimension between 3 and 17, inclusive. 
+
+give_mal.m returns the constant of malnormality of a single matrix using by calculating the square root of half the smallest eigenvalue of the Hessian of the squared commutator norm
+
+give_mal_opt.m returns the constant of malnormality of a single matrix using optimization
+
+hessian_creator_iso2.m created the Hessian files in the Hessians folder
+
+make_a_ginib.m returns a real-valued Ginibre matrix of a specified dimension
+
+maje_a_jig_real.m returns a matrix of the form (1/2)(Re(U)+Im(V)), where (U,V) are Haar-random orthogonal matrices
+
+optimization_constraint_iso.m is the file containing the constraints of the optimization problem 
+
+phi_iso2.m is the isometry between vectors and trace-zero symmetric matrices
