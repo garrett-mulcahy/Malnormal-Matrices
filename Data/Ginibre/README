@@ -1,0 +1,3 @@
+This folder contains the constants of malnormality generated for the real valued Ginibre ensemble.
+gin_data_FINAL.mat is a MATLAB cell with each entry containing a vector that contains all the calculated constants of malnormality at a specific dimension
+dim.mat is a MATLAB vector which gives the dimension for each corresponding 
