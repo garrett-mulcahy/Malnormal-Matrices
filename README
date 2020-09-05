@@ -1,6 +1,7 @@
 We present the minimal code necessary to recreate the results given the Malnormal Matrices
 
 Data consists of the constants of malnormalities calculated for the real-valued Ginibre ensemble and matrices of form J = (1/2)(Re(U)+Im(V)), the latter of which we detailed connections to quantum expanders
+
 Hessians consists of the Hessians of the squared commutator norms as a function of the entries of a matrix. Once a matrix has been specified, its malnormality constant is just the square root of half the smallest eigenvalue. We employed this approach for matrices of dimension 3 to 18. 
 
 We now explain the files. In order to run this code in MATLAB, all of these files need to be uploaded into MATLAB together in a single folder since they call on each other 
