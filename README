@@ -6,7 +6,7 @@ Hessians consists of the Hessians of the squared commutator norms as a function 
 
 We now explain the files. In order to run this code in MATLAB, all of these files need to be uploaded into MATLAB together in a single folder since they call on each other 
 
-RandOrthMat.m is not original code, it is by Ofek Shilon, 2006. It returns Haar-random orthogonal matrices 
+RandOrthMat.m returns Haar random orthogonal matrices. This is not an original function, it was obtained from the MATLAB file exchange. Ofek Shilon (2020). RandOrthMat (https://www.mathworks.com/matlabcentral/fileexchange/11783-randorthmat), MATLAB Central File Exchange. Retrieved September 5, 2020.
 
 generate_mal_data_opt.m and generate_gin_data_opt.m use optimization to generate the constant of malnormality for a large number of matrices of form J = (1/2)(Re(U)+Im(V)) and matrices from the real-valued Ginibre ensemble, respectively. We used this approach to generate constants of malnormality for square matrices of dimension 18 and greater. For any additional data generation, we recommend using these files as opposed to the Hessian approach outlined below. 
 
