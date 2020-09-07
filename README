@@ -20,7 +20,7 @@ hessian_creator_iso2.m created the Hessian files in the Hessians folder
 
 make_a_ginib.m returns a real-valued Ginibre matrix of a specified dimension
 
-maje_a_jig_real.m returns a matrix of the form (1/2)(Re(U)+Im(V)), where (U,V) are Haar-random orthogonal matrices
+make_a_jig_real.m returns a matrix of the form (1/2)(Re(U)+Im(V)), where (U,V) are Haar-random orthogonal matrices
 
 optimization_constraint_iso.m is the file containing the constraints of the optimization problem 
 
